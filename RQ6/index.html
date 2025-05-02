@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo de Juegos</title>
+  <link rel="stylesheet" href="catalogo.css" />
+</head>
+<body>
+
+  <h1>Catálogo de Juegos</h1>
+
+  <div class="filtros">
+    <input type="number" id="precioMin" placeholder="Precio mínimo">
+    <input type="number" id="precioMax" placeholder="Precio máximo">
+    
+    <select id="categoria">
+      <option value="">Categoría</option>
+      <option value="accion">Acción</option>
+      <option value="aventura">Aventura</option>
+      <option value="rpg">RPG</option>
+      <option value="estrategia">Estrategia</option>
+    </select>
+
+    <select id="plataforma">
+      <option value="">Plataforma</option>
+      <option value="ps4">PS4</option>
+      <option value="ps5">PS5</option>
+      <option value="switch">Switch</option>
+      <option value="windows">Windows</option>
+      <option value="macos">macOS</option>
+    </select>
+
+    <label>
+      <input type="checkbox" id="soloOfertas"> Solo ofertas
+    </label>
+
+    <button onclick="filtrarJuegos()">Filtrar</button>
+  </div>
+
+  <div class="juegos" id="listaJuegos">
+    <div class="juego" data-precio="59.99" data-categoria="accion" data-plataforma="ps5" data-oferta="false">
+      <img src="https://via.placeholder.com/200x100?text=Juego+1" alt="Juego 1">
+      <p>Juego 1</p>
+      <p>$59.99 - Acción - PS5</p>
+    </div>
+    <div class="juego" data-precio="12.93" data-categoria="aventura" data-plataforma="windows" data-oferta="true">
+      <img src="https://via.placeholder.com/200x100?text=Juego+2" alt="Juego 2">
+      <p>Juego 2</p>
+      <p>$12.93 - Aventura - WINDOWS</p>
+    </div>
+    <div class="juego" data-precio="29.99" data-categoria="rpg" data-plataforma="windows" data-oferta="false">
+      <img src="https://via.placeholder.com/200x100?text=Juego+3" alt="Juego 3">
+      <p>Juego 3</p>
+      <p>$29.99 - Rpg - WINDOWS</p>
+    </div>
+    <div class="juego" data-precio="45.00" data-categoria="aventura" data-plataforma="ps4" data-oferta="false">
+      <img src="https://via.placeholder.com/200x100?text=Juego+4" alt="Juego 4">
+      <p>Juego 4</p>
+      <p>$45.00 - Aventura - PS4</p>
+    </div>
+    <div class="juego" data-precio="22.00" data-categoria="estrategia" data-plataforma="macos" data-oferta="true">
+      <img src="https://via.placeholder.com/200x100?text=Juego+5" alt="Juego 5">
+      <p>Juego 5</p>
+      <p>$22.00 - Estrategia - MACOS</p>
+    </div>
+    <div class="juego" data-precio="39.90" data-categoria="accion" data-plataforma="switch" data-oferta="false">
+      <img src="https://via.placeholder.com/200x100?text=Juego+6" alt="Juego 6">
+      <p>Juego 6</p>
+      <p>$39.90 - Acción - SWITCH</p>
+    </div>
+    <div class="juego" data-precio="49.99" data-categoria="rpg" data-plataforma="windows" data-oferta="true">
+      <img src="https://via.placeholder.com/200x100?text=Juego+7" alt="Juego 7">
+      <p>Juego 7</p>
+      <p>$49.99 - Rpg - WINDOWS</p>
+    </div>
+    <div class="juego" data-precio="10.00" data-categoria="accion" data-plataforma="ps4" data-oferta="false">
+      <img src="https://via.placeholder.com/200x100?text=Juego+8" alt="Juego 8">
+      <p>Juego 8</p>
+      <p>$10.00 - Acción - PS4</p>
+    </div>
+    <div class="juego" data-precio="75.00" data-categoria="estrategia" data-plataforma="ps5" data-oferta="false">
+      <img src="https://via.placeholder.com/200x100?text=Juego+9" alt="Juego 9">
+      <p>Juego 9</p>
+      <p>$75.00 - Estrategia - PS5</p>
+    </div>
+    <div class="juego" data-precio="60.00" data-categoria="aventura" data-plataforma="macos" data-oferta="false">
+      <img src="https://via.placeholder.com/200x100?text=Juego+10" alt="Juego 10">
+      <p>Juego 10</p>
+      <p>$60.00 - Aventura - MACOS</p>
+    </div>
+  </div>
+
+  <script src="catalogo.js"></script>
+</body>
+</html>
