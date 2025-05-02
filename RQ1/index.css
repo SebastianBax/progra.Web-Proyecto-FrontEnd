@@ -1,0 +1,51 @@
+
+  
+  body {
+    background-color: #f5f5f5a4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .login-contenedor {
+    background-color: rgba(255, 255, 255, 0.489);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-contenedor h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .datos {
+    margin-bottom: 30px;
+  }
+  
+  .datos label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .datos input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 10px;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
