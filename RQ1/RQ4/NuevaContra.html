@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verificar Código</title>
+  <link rel="stylesheet" href="NuevaContra.CSS" />
+</head>
+<body>
+
+  <div class="codigo-contenedor">
+    <h2>Verifica tu identidad</h2>
+    <p>Ingresa el código enviado a tu correo y establece una nueva contraseña.</p>
+
+    <form>
+      <div class="datos">
+        <label for="codigo">Código de verificación</label>
+        <input type="text" id="codigo" name="codigo" placeholder="Ej: 123456" required />
+      </div>
+
+      <div class="datos">
+        <label for="nueva">Nueva Contraseña</label>
+        <input type="password" id="nueva" name="nueva" placeholder="Nueva contraseña" required />
+      </div>
+
+      <div class="datos">
+        <label for="confirmar">Confirmar Contraseña</label>
+        <input type="password" id="confirmar" name="confirmar" placeholder="Repite la contraseña" required />
+      </div>
+
+      <button type="submit" class="codigo-button">Restablecer Contraseña</button>
+    </form>
+  </div>
+
+</body>
+</html>

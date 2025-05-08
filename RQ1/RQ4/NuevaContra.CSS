@@ -1,33 +1,39 @@
-
-  
-  body {
+body {
     background-color: #f5f5f5a4;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
   }
   
-  .login-contenedor {
+  .codigo-contenedor {
     background-color: rgba(255, 255, 255, 0.489);
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
     width: 100%;
     max-width: 400px;
+    text-align: center;
   }
   
-  .login-contenedor h2 {
-    text-align: center;
+  .codigo-contenedor h2 {
+    margin-bottom: 10px;
+  }
+  
+  .codigo-contenedor p {
+    font-size: 14px;
     margin-bottom: 20px;
   }
   
   .datos {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    text-align: left;
   }
   
   .datos label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   
   .datos input {
@@ -37,25 +43,18 @@
     border-radius: 6px;
   }
   
-  .login-button {
+  .codigo-button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
     color: white;
     border: none;
-    font-size: 10px;
-    text-align: center;
-    text-decoration: none;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
   }
   
-  .login-button:hover {
+  .codigo-button:hover {
     background-color: #0056b3;
   }
-
-  .botones {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-  }
-
   
